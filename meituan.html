@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/meituan.css"/>
+	</head>
+	<body>
+		<div class="all">
+			<div class="header">
+				<img src="meituanimg/ceiling-logo2.png" >
+				<div>
+					<a class="a" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					<input type="text" placeholder="请输入...">
+					<a class="search" href="">搜索</a>
+				</div>
+			</div>
+			<div class="content">
+				<span id="car" onclick="tolist(this)">我的购物车（<span id="number">0</span>）</span>
+				<div class="food">
+					<div>
+						<img src="meituanimg/1cde.jpg" width="100%">
+						<p id="massage0"><span>鸡米粒</span><span>16/元每份</span></p>
+						<p>月销8814单</p>
+						<p><span>起送￥10</span><span>免费配送</span><span>45分钟</span></p>
+						<input type="button" value="加入购物车" onclick="addcar0(this)">
+					</div>
+					<div>
+						<img src="meituanimg/3a31d.jpg" width="100%">
+						<p id="massage1"><span>杨记小厨</span><span>12/元每份</span></p>
+						<p>月销8814单</p>
+						<p><span>起送￥10</span><span>免费配送</span><span>45分钟</span></p>
+						<input type="button" value="加入购物车" onclick="addcar1(this)">
+					</div>
+					<div>
+						<img src="meituanimg/9ecd.jpg" width="100%">
+						<p id="massage2"><span>黄焖鸡米饭</span><span>13/元每份</span></p>
+						<p>月销8814单</p>
+						<p><span>起送￥10</span><span>免费配送</span><span>45分钟</span></p>
+						<input type="button" value="加入购物车" onclick="addcar2(this)">
+					</div>
+					<div>
+						<img src="meituanimg/d64c553.jpg" width="100%">
+						<p id="massage3"><span>烤肉拌饭</span><span>14/元每份</span></p>
+						<p>月销8814单</p>
+						<p><span>起送￥10</span><span>免费配送</span><span>45分钟</span></p>
+						<input type="button" value="加入购物车" onclick="addcar3(this)">
+					</div>
+				</div>
+				<div class="list">
+					<table id="tab">
+						<tr>
+							<th>菜品<input type="checkbox" onclick="allpick(this)" id="allfood"	 ></th>
+							<th>价格（元/份）</th>
+							<th>全选</th>
+							<th>操作</th>
+						</tr>
+						
+					</table>
+					<p>
+						<input type="button" value="全部删除" onclick="deleteall(this)" id="allde">
+						<span >
+							合计:<span id="sum" >0</span>元<input type="button" value="结算" onclick="payfor()">
+						</span>
+					</p>
+					<h4 onclick="index(this)">
+						继续任性点餐
+					</h4>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="meituan.js"></script>
+	</body>
+</html>
